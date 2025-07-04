@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
             <div className="flex items-center space-x-2">
               <Battery className="h-8 w-8 text-green-600" />
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">Amaron</h1>
+                <h1 className="text-2xl font-bold text-gray-900">110016 -Yusuf Sarai Analytics</h1>
                 <p className="text-sm text-gray-500">Market Expansion Dashboard</p>
               </div>
             </div>

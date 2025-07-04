@@ -1,0 +1,199 @@
+{
+  "market_coverage": {
+    "covered": [
+      {
+        "area": "Defence Colony",
+        "status": "Covered",
+        "notes": "Multiple dealers visible; good saturation"
+      },
+      {
+        "area": "Lajpat Nagar",
+        "status": "Covered",
+        "notes": "High dealer density near Amar Colony, Central Market area"
+      },
+      {
+        "area": "Greater Kailash",
+        "status": "Covered",
+        "notes": "Cluster seen in GK-1 region"
+      },
+      {
+        "area": "Hauz Khas / AIIMS",
+        "status": "Covered",
+        "notes": "Some visible presence (inner roads could be optimized)"
+      }
+    ],
+    "uncovered": [
+      {
+        "area": "Sarojini Nagar",
+        "status": "Not Covered",
+        "opportunity": "Dense residential + high retail footfall"
+      },
+      {
+        "area": "Lodhi Colony",
+        "status": "Not Covered",
+        "opportunity": "Affluent govt housing, near JLN Stadium"
+      },
+      {
+        "area": "South Extension I & II",
+        "status": "Lightly Covered",
+        "opportunity": "Upscale market, untapped service"
+      },
+      {
+        "area": "Green Park Extension",
+        "status": "Partially Covered",
+        "opportunity": "Micro-roads not fully utilized"
+      },
+      {
+        "area": "Yusuf Sarai",
+        "status": "Not Covered",
+        "opportunity": "High walk-in traffic, auto-repair market"
+      },
+      {
+        "area": "Netaji Nagar",
+        "status": "Not Covered",
+        "opportunity": "Dense officer housing, high-trust ops"
+      },
+      {
+        "area": "Andrews Ganj",
+        "status": "Not Covered",
+        "opportunity": "Strategic node between South Ex and Lajpat"
+      },
+      {
+        "area": "Sewa Nagar / Lodi Road",
+        "status": "Not Covered",
+        "opportunity": "Strategic arterial road"
+      },
+      {
+        "area": "Okhla Phase I Edge",
+        "status": "Not Covered",
+        "opportunity": "Fleet & SME battery demand"
+      },
+      {
+        "area": "Panchsheel / Shahpur Jat",
+        "status": "Not Covered",
+        "opportunity": "Boutique garages, affluent homes"
+      }
+    ]
+  },
+  "revenue_opportunity": {
+    "location": "Yusuf Sarai",
+    "daily_footfall": 500,
+    "conversion_rate_monthly": 0.02,
+    "battery_price": 5000,
+    "monthly_revenue": 150000,
+    "annual_revenue": 1800000
+  },
+  "market_share_impact": {
+    "before": {
+      "local_share": "<1%",
+      "centres_in_yusuf_sarai": 3,
+      "total_nearby_centres": 27
+    },
+    "after": {
+      "local_share": "15–20%",
+      "new_centres": 2,
+      "footfall": 500,
+      "battery_sales_per_month": 120,
+      "new_monthly_revenue": 600000
+    }
+  },
+  "promotions": {
+    "top_areas": [
+      {
+        "location": "Yusuf Sarai Main Market & AIIMS Metro",
+        "type": "Kiosk, battery camp"
+      },
+      {
+        "location": "Ajit Arcade / Kailash Colony Rd",
+        "type": "Garage partnerships"
+      },
+      {
+        "location": "Chirag Delhi & Savitri Nagar",
+        "type": "Workshop branding, micro-vans"
+      }
+    ],
+    "methods": [
+      { "method": "Battery Camps", "impact": 4, "cost": "Low-Med" },
+      { "method": "Workshop Partnerships", "impact": 4, "cost": "Low" },
+      { "method": "Digital + WhatsApp", "impact": 3, "cost": "Low" },
+      { "method": "Van + Roadshows", "impact": 2, "cost": "Med–High" }
+    ]
+  },
+  "recommended_locations": [
+    {
+      "location": "AIIMS Metro / Aurobindo Marg",
+      "type": "Flagship",
+      "benefit": "Commuter + vehicle traffic"
+    },
+    {
+      "location": "Ajit Arcade / Kailash Colony",
+      "type": "Retail + Garage",
+      "benefit": "Auto cluster, high income"
+    },
+    {
+      "location": "Green Park Extension",
+      "type": "Mobile hub",
+      "benefit": "Residential, high 2-wheeler density"
+    }
+  ],
+  "influencers": {
+    "types": [
+      {
+        "type": "Mechanics",
+        "locations": ["Kailash Colony Rd", "Krishna Market"],
+        "influence": "Very High"
+      },
+      {
+        "type": "Retailers",
+        "locations": ["Ajit Arcade", "Ramesh Market", "Lajpat"],
+        "influence": "High"
+      },
+      {
+        "type": "Fleet Drivers",
+        "locations": ["AIIMS Parking", "Green Park"],
+        "influence": "Medium–High"
+      },
+      {
+        "type": "Digital Listings",
+        "locations": ["Google Maps", "JustDial"],
+        "influence": "Medium"
+      }
+    ]
+  },
+  "distributor_performance": {
+    "distributor": "Shri Ganesh Auto",
+    "total_stores": 30,
+    "average_units": 511,
+    "area_performance": [
+      { "area": "Lajpat Nagar", "stores": 11, "avg_store": 442, "total": 4863 },
+      {
+        "area": "Kailash Colony",
+        "stores": 3,
+        "avg_store": 1373,
+        "total": 4118
+      },
+      {
+        "area": "East of Kailash",
+        "stores": 6,
+        "avg_store": 623,
+        "total": 3739
+      }
+    ],
+    "low_performers": [
+      { "area": "Green Park", "avg_store": 208 },
+      { "area": "Panchsheel Park", "avg_store": 620, "stores": 1 }
+    ]
+  },
+  "dealer_performance": [
+    { "dealer": "Julka Automobiles", "area": "Kailash Colony", "units": 2779 },
+    { "dealer": "Anand Auto Spares", "area": "East of Kailash", "units": 1209 },
+    { "dealer": "Batra Automobiles", "area": "Kailash Colony", "units": 1146 }
+  ],
+  "cross_sell_opportunities": [
+    "Automotive Accessories",
+    "Lubricants & Engine Oils",
+    "Inverter Batteries",
+    "EV Charging Units (2W)",
+    "Maintenance Consumables"
+  ]
+}

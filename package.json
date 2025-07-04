@@ -2,7 +2,7 @@
   "name": "amaron-dashboard",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://theprym.github.io/sales-ys"
+  "homepage": "https://theprym.github.io/sales-ys",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,7 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build2": "react-scripts build"
   },
   "dependencies": {
     "html2canvas": "^1.4.1",

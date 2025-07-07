@@ -13,9 +13,10 @@ L.Icon.Default.mergeOptions({
 interface InteractiveMapProps {
   dealers: DealerLocation[];
   className?: string;
+  locationName: string;
 }
 
-const InteractiveMap: React.FC<InteractiveMapProps> = ({ dealers, className = '' }) => {
+const InteractiveMap: React.FC<InteractiveMapProps> = ({ dealers, className = '', locationName }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<L.Map | null>(null);
   const markersRef = useRef<L.LayerGroup | null>(null);
@@ -104,49 +105,50 @@ const InteractiveMap: React.FC<InteractiveMapProps> = ({ dealers, className = ''
     });
 
     // Add recommended locations
-    const recommendedLocations = [
-      { lat: 28.5425, lng: 77.2150, type: 'high-priority', reason: 'High footfall area with no coverage' },
-      { lat: 28.5615, lng: 77.2180, type: 'medium-priority', reason: 'Growing residential area' },
-      { lat: 28.5385, lng: 77.2010, type: 'low-priority', reason: 'Potential expansion zone' }
-    ];
+    // const recommendedLocations = [
+    //   { lat: 28.5425, lng: 77.2150, type: 'high-priority', reason: 'High footfall area with no coverage' },
+    //   { lat: 28.5615, lng: 77.2180, type: 'medium-priority', reason: 'Growing residential area' },
+    //   { lat: 28.5385, lng: 77.2010, type: 'low-priority', reason: 'Potential expansion zone' }
+    // ];
 
-    recommendedLocations.forEach((location) => {
-      const color = location.type === 'high-priority' ? '#fbbf24' : 
-                   location.type === 'medium-priority' ? '#f59e0b' : '#d97706';
+    // recommendedLocations.forEach((location) => {
+    //   const color = location.type === 'high-priority' ? '#fbbf24' : 
+    //                location.type === 'medium-priority' ? '#f59e0b' : '#d97706';
       
-      const icon = L.divIcon({
-        html: `
-          <div style="
-            background-color: ${color};
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            border: 2px solid white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-            animation: pulse 2s infinite;
-          "></div>
-        `,
-        iconSize: [16, 16],
-        className: 'recommended-marker'
-      });
+    //   const icon = L.divIcon({
+    //     html: `
+    //       <div style="
+    //         background-color: ${color};
+    //         width: 16px;
+    //         height: 16px;
+    //         border-radius: 50%;
+    //         border: 2px solid white;
+    //         box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    //         animation: pulse 2s infinite;
+    //       "></div>
+    //     `,
+    //     iconSize: [16, 16],
+    //     className: 'recommended-marker'
+    //   });
 
-      const marker = L.marker([location.lat, location.lng], { icon })
-        .bindPopup(`
-          <div class="p-3">
-            <h3 class="font-semibold text-yellow-600">Recommended Location</h3>
-            <p class="text-sm text-gray-600 mt-1">${location.reason}</p>
-            <div class="mt-2">
-              <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
-                ${location.type.replace('-', ' ')}
-              </span>
-            </div>
-          </div>
-        `);
+    //   const marker = L.marker([location.lat, location.lng], { icon })
+    //     .bindPopup(`
+    //       <div class="p-3">
+    //         <h3 class="font-semibold text-yellow-600">Recommended Location</h3>
+    //         <p class="text-sm text-gray-600 mt-1">${location.reason}</p>
+    //         <div class="mt-2">
+    //           <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+    //             ${location.type.replace('-', ' ')}
+    //           </span>
+    //         </div>
+    //       </div>
+    //     `);
 
-      markersRef.current?.addLayer(marker);
-    });
+    //   markersRef.current?.addLayer(marker);
+    // });
 
-  }, [dealers]);
+  }
+  , [dealers]);
 
   return (
     <div className={`relative ${className}`}>

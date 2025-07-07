@@ -1,0 +1,310 @@
+{
+  "locality": "Baruipur, South 24 Parganas, West Bengal",
+  "market_coverage": {
+    "covered": [
+      {
+        "area": "Narendrapur / Kamalgazi",
+        "status": "Moderate/High",
+        "notes": "Opportunity to upsell premium variants, loyalty campaigns"
+      },
+      {
+        "area": "Jaynagar Majilpur",
+        "status": "Moderate/High",
+        "notes": "Dense township; good footfall at bus/train points"
+      }
+    ],
+    "uncovered": [
+      {
+        "area": "Rajpur Sonarpur / Sonarpur",
+        "status": "Low",
+        "opportunity": "Satellite retail + mobile mechanic outreach"
+      },
+      {
+        "area": "Garia",
+        "status": "Low",
+        "opportunity": "Differentiate brand via retail model; quick-install hubs"
+      },
+      {
+        "area": "Baruipur / Baruipur RS",
+        "status": "Low",
+        "opportunity": "Central hub with expansion opportunity"
+      },
+      {
+        "area": "Madarat",
+        "status": "Low",
+        "opportunity": "Low competition, good first-mover opportunity"
+      },
+      {
+        "area": "Laskar Pur",
+        "status": "Low",
+        "opportunity": "Unserved arterial zone"
+      },
+      {
+        "area": "Boral",
+        "status": "No Coverage",
+        "opportunity": "High residential density; ideal for first dealership"
+      },
+      {
+        "area": "Khodar Bazar / Champahati",
+        "status": "No Coverage",
+        "opportunity": "Strong connectivity to Baruipur; mobile campaigns"
+      },
+      {
+        "area": "Subhasgram",
+        "status": "No Coverage",
+        "opportunity": "Commuter belt; leverage train station crowd"
+      },
+      {
+        "area": "Kodalia",
+        "status": "No Coverage",
+        "opportunity": "Low competition; fast awareness gain"
+      },
+      {
+        "area": "Malancha Mahinagar",
+        "status": "No Coverage",
+        "opportunity": "Mobile van led service expansion"
+      },
+      {
+        "area": "Harinavi",
+        "status": "No Coverage",
+        "opportunity": "Spillover from Sonarpur; retail starter"
+      },
+      {
+        "area": "Rajpur (South 24 Parganas)",
+        "status": "No Coverage",
+        "opportunity": "Complement Sonarpur retail model"
+      }
+    ]
+  },
+  "revenue_opportunity": {
+    "footfall_per_day": 700,
+    "conversion_rate_monthly": 0.02,
+    "battery_price": 5000,
+    "monthly_revenue": 210000,
+    "annual_revenue": 2520000,
+    "cluster_annual_revenue_if_fully_covered": 10000000
+  },
+  "market_share_impact": {
+    "before": {
+      "local_share": "8–10%",
+      "centres_in_baruipur": 1,
+      "total_centres_in_cluster": 6
+    },
+    "after": {
+      "local_share": "20–25%",
+      "new_centres": 13,
+      "monthly_unit_sales": 210,
+      "monthly_revenue": 1050000,
+      "annual_revenue": 12500000
+    }
+  },
+  "promotions": {
+    "top_areas": [
+      {
+        "location": "Boral",
+        "pin": "700154",
+        "tactics": [
+          "Check-up camps",
+          "intersection stalls",
+          "mechanic referrals"
+        ]
+      },
+      {
+        "location": "Khodar Bazar / Champahati",
+        "pin": "743330",
+        "tactics": [
+          "Mobile vans",
+          "QR campaigns",
+          "garage branding"
+        ]
+      },
+      {
+        "location": "Subhasgram",
+        "pin": "700147",
+        "tactics": [
+          "Rail visibility",
+          "retail canopy",
+          "local loyalty schemes"
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "method": "Garage Partnerships",
+        "impact": 4,
+        "cost": "Low",
+        "notes": "High trust conversion"
+      },
+      {
+        "method": "Battery Camps & Canopy Stalls",
+        "impact": 4,
+        "cost": "Low-Med"
+      },
+      {
+        "method": "QR Code Loyalty Campaigns",
+        "impact": 3,
+        "cost": "Low"
+      },
+      {
+        "method": "Mobile Micro-Vans",
+        "impact": 4,
+        "cost": "Medium"
+      }
+    ]
+  },
+  "recommended_locations": [
+    {
+      "location": "Boral",
+      "pin": "700154",
+      "type": "Flagship + Kiosk",
+      "benefit": "Suburban 2W + 4W commuter hotspot"
+    },
+    {
+      "location": "Khodar Bazar / Champahati",
+      "pin": "743330",
+      "type": "Garage Affiliate",
+      "benefit": "Utility vehicle zone, low cost"
+    },
+    {
+      "location": "Subhasgram",
+      "pin": "700147",
+      "type": "Mobile Van Hub",
+      "benefit": "Rail-based traffic + mid-income housing"
+    }
+  ],
+  "influencers": {
+    "types": [
+      {
+        "type": "2W/4W Mechanics",
+        "hotspots": [
+          "Boral",
+          "Subhasgram",
+          "Garia",
+          "Baruipur RS"
+        ],
+        "strategy": "Referral commission + signage"
+      },
+      {
+        "type": "Garage Owners",
+        "hotspots": [
+          "Rajpur Sonarpur",
+          "Kamalgazi",
+          "Jaynagar Majilpur"
+        ],
+        "strategy": "Loyalty scheme + branding"
+      },
+      {
+        "type": "Accessory Dealers",
+        "hotspots": [
+          "Garia",
+          "Narendrapur",
+          "Baruipur Bazar"
+        ],
+        "strategy": "Combo offers + warranty QR"
+      },
+      {
+        "type": "Pump Attendants / Resellers",
+        "hotspots": [
+          "Malancha",
+          "Khodar Bazar",
+          "Madarat"
+        ],
+        "strategy": "Branded gear + check-up toolkits"
+      }
+    ]
+  },
+  "distributor_performance": {
+    "distributor": "Zillion Power (India) Pvt Ltd",
+    "average_units": 155,
+    "stores": [
+      {
+        "location": "Baruipur",
+        "avg": 279
+      },
+      {
+        "location": "Kamalgazi Bypass",
+        "avg": 249
+      },
+      {
+        "location": "Ketopole",
+        "avg": 99
+      },
+      {
+        "location": "Narendrapur",
+        "avg": 79
+      },
+      {
+        "location": "24PGS (S)",
+        "avg": 69
+      }
+    ]
+  },
+  "dealer_performance": [
+    {
+      "dealer": "STAR GOLD BATTERY",
+      "area": "Baruipur",
+      "units": 279
+    },
+    {
+      "dealer": "SARDAR AUTO MOBILES",
+      "area": "Kamalgazi Bypass",
+      "units": 249
+    },
+    {
+      "dealer": "M/S ZILION POWER",
+      "area": "Ketopole",
+      "units": 99
+    },
+    {
+      "dealer": "PERFECT TOUCH",
+      "area": "Narendrapur",
+      "units": 79
+    }
+  ],
+  "cross_sell_opportunities": [
+    {
+      "product": "2W Batteries",
+      "areas": [
+        "Baruipur",
+        "Garia",
+        "Subhasgram"
+      ],
+      "method": "Co-brand with 2W garages"
+    },
+    {
+      "product": "Lubricants & Coolants",
+      "areas": [
+        "Kamalgazi",
+        "Narendrapur"
+      ],
+      "method": "Combo packs, mechanic tie-ins"
+    },
+    {
+      "product": "Car Accessories",
+      "areas": [
+        "Narendrapur",
+        "Rajpur",
+        "Garia"
+      ],
+      "method": "Shelf integration + promos"
+    },
+    {
+      "product": "Inverter Batteries",
+      "areas": [
+        "Jaynagar",
+        "Malancha",
+        "Champahati"
+      ],
+      "method": "Sub-dealers, credit support"
+    },
+    {
+      "product": "Electrical Spares & Tools",
+      "areas": [
+        "Subhasgram",
+        "Boral",
+        "Harinavi"
+      ],
+      "method": "Garage packs + subscriptions"
+    }
+  ]
+}

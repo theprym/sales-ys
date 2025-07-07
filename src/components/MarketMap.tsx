@@ -10,20 +10,20 @@ export const MarketMap: React.FC<MarketMapProps> = ({ data }) => {
 
   // Mock coordinates for Delhi areas (in a real app, you'd use actual coordinates)
   const areaCoordinates = {
-    'Defence Colony': { x: 45, y: 60, status: 'covered' },
-    'Lajpat Nagar': { x: 55, y: 65, status: 'covered' },
-    'Greater Kailash': { x: 40, y: 70, status: 'covered' },
-    'Hauz Khas / AIIMS': { x: 35, y: 55, status: 'covered' },
-    'Sarojini Nagar': { x: 25, y: 50, status: 'uncovered' },
-    'Lodhi Colony': { x: 30, y: 45, status: 'uncovered' },
-    'South Extension I & II': { x: 35, y: 65, status: 'partial' },
-    'Green Park Extension': { x: 30, y: 60, status: 'partial' },
+    'Defence Colony': { x: 45, y: 60, status: 'covered', highlight: false},
+    'Lajpat Nagar': { x: 55, y: 65, status: 'covered', highlight: false },
+    'Greater Kailash': { x: 40, y: 70, status: 'covered' , highlight: false},
+    'Hauz Khas / AIIMS': { x: 35, y: 55, status: 'covered' , highlight: false},
+    'Sarojini Nagar': { x: 25, y: 50, status: 'uncovered' , highlight: false},
+    'Lodhi Colony': { x: 30, y: 45, status: 'uncovered' , highlight: false},
+    'South Extension I & II': { x: 35, y: 65, status: 'partial' , highlight: false},
+    'Green Park Extension': { x: 30, y: 60, status: 'partial' , highlight: false},
     'Yusuf Sarai': { x: 32, y: 52, status: 'uncovered', highlight: true },
-    'Netaji Nagar': { x: 28, y: 58, status: 'uncovered' },
-    'Andrews Ganj': { x: 38, y: 62, status: 'uncovered' },
-    'Sewa Nagar / Lodi Road': { x: 33, y: 48, status: 'uncovered' },
-    'Okhla Phase I Edge': { x: 60, y: 70, status: 'uncovered' },
-    'Panchsheel / Shahpur Jat': { x: 42, y: 58, status: 'uncovered' },
+    'Netaji Nagar': { x: 28, y: 58, status: 'uncovered' , highlight: false},
+    'Andrews Ganj': { x: 38, y: 62, status: 'uncovered' , highlight: false},
+    'Sewa Nagar / Lodi Road': { x: 33, y: 48, status: 'uncovered' , highlight: false},
+    'Okhla Phase I Edge': { x: 60, y: 70, status: 'uncovered' , highlight: false},
+    'Panchsheel / Shahpur Jat': { x: 42, y: 58, status: 'uncovered' , highlight: false},
   };
 
   const getStatusColor = (status: string, highlight?: boolean) => {
@@ -177,7 +177,7 @@ export const MarketMap: React.FC<MarketMapProps> = ({ data }) => {
       )}
 
       {/* Strategic Locations */}
-      <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
+      {/* <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Recommended Strategic Locations</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {data.recommended_locations.map((location: any, index: number) => (
@@ -198,7 +198,7 @@ export const MarketMap: React.FC<MarketMapProps> = ({ data }) => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,3 +1,30 @@
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom map styles */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-popup-tip {
+  background: white;
+}
+
+.leaflet-container {
+  height: auto;
+  width: auto;
+}
+
+.custom-marker {
+  background: none !important;
+  border: none !important;
+}
+
+.recommended-marker {
+  background: none !important;
+  border: none !important;
+}

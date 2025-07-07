@@ -8,6 +8,8 @@ import { DistributionNetwork } from './components/DistributionNetwork';
 import { PerformanceAnalytics } from './components/PerformanceAnalytics';
 import { ExportPanel } from './components/ExportPanel';
 import marketData from './data/yusuf-sarai-data.json';
+import { dealerLocations, performanceData, marketShare } from './data/mockData';
+import InteractiveMap from './components/InteractiveMap';
 
 function App() {
   const [activeTab, setActiveTab] = useState('overview');
@@ -28,7 +30,7 @@ function App() {
       case 'financial':
         return <FinancialImpact data={marketData} />;
       case 'map':
-        return <MarketMap data={marketData} />;
+        return <InteractiveMap dealers={dealerLocations} className='h-screen'/>;
       case 'strategy':
         return <GoToMarketStrategy data={marketData} />;
       case 'network':

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calculator, TrendingUp, DollarSign, Target } from 'lucide-react';
+import { Calculator, TrendingUp, DollarSign, Target, IndianRupee } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
 interface FinancialImpactProps {
@@ -13,7 +13,7 @@ export const FinancialImpact: React.FC<FinancialImpactProps> = ({ data }) => {
 
   // Calculate dynamic metrics
   const monthlyCustomers = Math.round((footfall * 30 * conversionRate) / 100);
-  const monthlyRevenue = monthlyCustomers * batteryPrice;
+  const monthlyRevenue = monthlyCustomers * batteryPrice * .1;
   const annualRevenue = monthlyRevenue * 12;
 
   const revenueComparison = [
@@ -118,8 +118,8 @@ export const FinancialImpact: React.FC<FinancialImpactProps> = ({ data }) => {
 
             <div className="bg-green-50 rounded-lg p-4">
               <div className="flex items-center justify-between">
-                <DollarSign className="h-8 w-8 text-green-600" />
-                <span className="text-2xl font-bold text-green-900">₹{Math.round(monthlyRevenue / 100000)}L</span>
+                <IndianRupee className="h-8 w-8 text-green-600" />
+                <span className="text-2xl font-bold text-green-900">₹{Math.abs(monthlyRevenue/100000)}L</span>
               </div>
               <p className="text-sm text-green-700 mt-2">Monthly Revenue</p>
             </div>
@@ -127,18 +127,18 @@ export const FinancialImpact: React.FC<FinancialImpactProps> = ({ data }) => {
             <div className="bg-purple-50 rounded-lg p-4">
               <div className="flex items-center justify-between">
                 <TrendingUp className="h-8 w-8 text-purple-600" />
-                <span className="text-2xl font-bold text-purple-900">₹{Math.round(annualRevenue / 100000)}L</span>
+                <span className="text-2xl font-bold text-purple-900">₹{Math.abs(annualRevenue / 100000)}L</span>
               </div>
               <p className="text-sm text-purple-700 mt-2">Annual Revenue</p>
             </div>
 
-            <div className="bg-orange-50 rounded-lg p-4">
+            {/* <div className="bg-orange-50 rounded-lg p-4">
               <div className="flex items-center justify-between">
                 <span className="text-2xl">📈</span>
-                <span className="text-2xl font-bold text-orange-900">{Math.round((annualRevenue / 500000) * 100)}%</span>
+                <span className="text-2xl font-bold text-orange-900">{Math.abs((annualRevenue / 500000) * 100)}%</span>
               </div>
               <p className="text-sm text-orange-700 mt-2">ROI (Annual)</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -190,8 +190,9 @@ export const FinancialImpact: React.FC<FinancialImpactProps> = ({ data }) => {
       </div>
 
       {/* ROI Timeline */}
-      <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
+      {/* <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">ROI Timeline Projection</h3>
+        <h4 className="text-lg font-normal text-gray-400 mb-2">Assuming an investment of ₹500000</h4>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={roiTimeline}>
             <CartesianGrid strokeDasharray="3 3" />
@@ -202,7 +203,7 @@ export const FinancialImpact: React.FC<FinancialImpactProps> = ({ data }) => {
             <Bar dataKey="profit" fill="#22c55e" name="Cumulative Profit" />
           </BarChart>
         </ResponsiveContainer>
-      </div>
+      </div> */}
 
       {/* Key Financial Insights */}
       <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 border border-gray-200">

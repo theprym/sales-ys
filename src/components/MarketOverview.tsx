@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, TrendingUp, Users, DollarSign } from 'lucide-react';
+import { MapPin, TrendingUp, Users, DollarSign, IndianRupee } from 'lucide-react';
 
 interface MarketOverviewProps {
   data: any;
@@ -24,7 +24,7 @@ export const MarketOverview: React.FC<MarketOverviewProps> = ({ data }) => {
       title: 'Revenue Opportunity',
       value: '₹18L',
       subtitle: 'Annual potential in Yusuf Sarai',
-      icon: DollarSign,
+      icon: IndianRupee,
       color: 'text-green-600',
       bgColor: 'bg-green-50',
     },

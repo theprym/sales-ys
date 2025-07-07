@@ -4,9 +4,10 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 
 interface FinancialImpactProps {
   data: any;
+  marketName?: string;
 }
 
-export const FinancialImpact: React.FC<FinancialImpactProps> = ({ data }) => {
+export const FinancialImpact: React.FC<FinancialImpactProps> = ({ data, marketName }) => {
   const [footfall, setFootfall] = useState(data.revenue_opportunity.daily_footfall);
   const [conversionRate, setConversionRate] = useState(data.revenue_opportunity.conversion_rate_monthly * 100);
   const [batteryPrice, setBatteryPrice] = useState(data.revenue_opportunity.battery_price);
@@ -36,6 +37,15 @@ export const FinancialImpact: React.FC<FinancialImpactProps> = ({ data }) => {
 
   return (
     <div className="space-y-8">
+      {/* Market Context */}
+      {marketName && (
+        <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 border border-gray-200">
+          <h2 className="text-lg font-semibold text-gray-900 mb-1">{marketName} Financial Analysis</h2>
+          <p className="text-sm text-gray-600">
+            Revenue projections and investment analysis for market expansion
+          </p>
+        </div>
+      )}
       {/* Financial Calculator */}
       <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
         <h3 className="text-lg font-semibold text-gray-900 mb-6 flex items-center">

@@ -32,7 +32,7 @@ export const ExportPanel: React.FC = () => {
   const handleShare = () => {
     if (navigator.share) {
       navigator.share({
-        title: 'Amaron Yusuf Sarai Market Expansion Dashboard',
+        title: 'Analytics Dashboard',
         text: 'Investment opportunity analysis for Amaron battery expansion in Yusuf Sarai market',
         url: window.location.href,
       });

@@ -51,6 +51,8 @@ export const DistributionNetwork: React.FC<DistributionNetworkProps> = ({ data, 
     ? data.cross_sell_opportunities.filter((item: any) => typeof item === 'string')
     : data.cross_sell_opportunities?.map((item: any) => item.product) || [];
 
+  console.log(crossSellOpportunities);
+  
   return (
     <div className="space-y-8">
       {/* Market Context */}

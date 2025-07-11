@@ -10,6 +10,17 @@ interface MarketComparisonProps {
 export const MarketComparison: React.FC<MarketComparisonProps> = ({ yusufSaraiData, bengalData }) => {
   const [selectedMetric, setSelectedMetric] = useState('revenue');
 
+  const bengalPartial = bengalData.market_coverage.partial.length;
+  const bengalFull = bengalData.market_coverage.covered.length;
+  const bengalUncovered = bengalData.market_coverage.uncovered.length;
+  const percentBengal = Math.abs((((bengalPartial/2) + bengalFull)/(bengalPartial+bengalFull+bengalUncovered))*100).toFixed(2)
+
+  const yusufPartial = yusufSaraiData.market_coverage.partial.length;
+  const yusufFull = yusufSaraiData.market_coverage.covered.length;
+  const yusufUncovered = yusufSaraiData.market_coverage.uncovered.length;
+  const percentYusuf = Math.abs((((yusufPartial/2) + bengalFull)/(yusufPartial+yusufFull+yusufUncovered))*100).toFixed(2)
+  
+
   // Prepare comparison data
   const revenueComparison = [
     {
@@ -271,10 +282,13 @@ export const MarketComparison: React.FC<MarketComparisonProps> = ({ yusufSaraiDa
               <span className="font-medium text-red-600">{yusufSaraiData.market_coverage.uncovered.length}</span>
             </div>
             <div className="flex justify-between items-center">
+              <span className="text-sm text-gray-600">Partially Covered Areas:</span>
+              <span className="font-medium text-red-600">{yusufSaraiData.market_coverage.partial.length}</span>
+            </div>
+            <div className="flex justify-between items-center">
               <span className="text-sm text-gray-600">Coverage Ratio:</span>
               <span className="font-medium text-blue-600">
-                {Math.round((yusufSaraiData.market_coverage.covered.length / 
-                (yusufSaraiData.market_coverage.covered.length + yusufSaraiData.market_coverage.uncovered.length)) * 100)}%
+                {percentYusuf}%
               </span>
             </div>
           </div>
@@ -292,10 +306,13 @@ export const MarketComparison: React.FC<MarketComparisonProps> = ({ yusufSaraiDa
               <span className="font-medium text-red-600">{bengalData.market_coverage.uncovered.length}</span>
             </div>
             <div className="flex justify-between items-center">
+              <span className="text-sm text-gray-600">Partially Covered Areas:</span>
+              <span className="font-medium text-red-600">{bengalData.market_coverage.partial.length}</span>
+            </div>
+            <div className="flex justify-between items-center">
               <span className="text-sm text-gray-600">Coverage Ratio:</span>
               <span className="font-medium text-blue-600">
-                {Math.round((bengalData.market_coverage.covered.length / 
-                (bengalData.market_coverage.covered.length + bengalData.market_coverage.uncovered.length)) * 100)}%
+                {percentBengal}%
               </span>
             </div>
           </div>

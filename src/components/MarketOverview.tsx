@@ -8,22 +8,32 @@ interface MarketOverviewProps {
 export const MarketOverview: React.FC<MarketOverviewProps> = ({ data }) => {
   const coveredAreas = data.market_coverage.covered.length;
   const uncoveredAreas = data.market_coverage.uncovered.length;
-  const totalAreas = coveredAreas + uncoveredAreas;
+  const partiallyCovered = data.market_coverage.partial.length;
+  const totalAreas = coveredAreas + uncoveredAreas + partiallyCovered;
   const coveragePercentage = Math.round((coveredAreas / totalAreas) * 100);
+  const coveragePercentagePartial = Math.round((partiallyCovered / totalAreas) * 100);
 
   const keyMetrics = [
     {
-      title: 'Market Coverage',
+      title: 'Full Market Coverage',
       value: `${coveragePercentage}%`,
-      subtitle: `${coveredAreas}/${totalAreas} areas covered`,
+      subtitle: `${coveredAreas}/${totalAreas} areas covered fully`,
+      icon: MapPin,
+      color: 'text-green-600',
+      bgColor: 'bg-green-50',
+    },
+    {
+      title: 'Partial Market Coverage',
+      value: `${coveragePercentagePartial}%`,
+      subtitle: `${partiallyCovered}/${totalAreas} areas covered partially`,
       icon: MapPin,
       color: 'text-blue-600',
       bgColor: 'bg-blue-50',
     },
     {
       title: 'Revenue Opportunity',
-      value: '₹18L',
-      subtitle: 'Annual potential in Yusuf Sarai',
+      value: `${Math.abs(data.revenue_opportunity.annual_revenue/100000)}L`,
+      subtitle: 'Annual potential',
       icon: IndianRupee,
       color: 'text-green-600',
       bgColor: 'bg-green-50',

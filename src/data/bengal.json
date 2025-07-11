@@ -15,31 +15,6 @@
     ],
     "uncovered": [
       {
-        "area": "Rajpur Sonarpur / Sonarpur",
-        "status": "Low",
-        "opportunity": "Satellite retail + mobile mechanic outreach"
-      },
-      {
-        "area": "Garia",
-        "status": "Low",
-        "opportunity": "Differentiate brand via retail model; quick-install hubs"
-      },
-      {
-        "area": "Baruipur / Baruipur RS",
-        "status": "Low",
-        "opportunity": "Central hub with expansion opportunity"
-      },
-      {
-        "area": "Madarat",
-        "status": "Low",
-        "opportunity": "Low competition, good first-mover opportunity"
-      },
-      {
-        "area": "Laskar Pur",
-        "status": "Low",
-        "opportunity": "Unserved arterial zone"
-      },
-      {
         "area": "Boral",
         "status": "No Coverage",
         "opportunity": "High residential density; ideal for first dealership"
@@ -74,10 +49,37 @@
         "status": "No Coverage",
         "opportunity": "Complement Sonarpur retail model"
       }
+    ],
+    "partial":[
+      {
+        "area": "Rajpur Sonarpur / Sonarpur",
+        "status": "Low",
+        "opportunity": "Satellite retail + mobile mechanic outreach"
+      },
+      {
+        "area": "Garia",
+        "status": "Low",
+        "opportunity": "Differentiate brand via retail model; quick-install hubs"
+      },
+      {
+        "area": "Baruipur / Baruipur RS",
+        "status": "Low",
+        "opportunity": "Central hub with expansion opportunity"
+      },
+      {
+        "area": "Madarat",
+        "status": "Low",
+        "opportunity": "Low competition, good first-mover opportunity"
+      },
+      {
+        "area": "Laskar Pur",
+        "status": "Low",
+        "opportunity": "Unserved arterial zone"
+      }
     ]
   },
   "revenue_opportunity": {
-    "footfall_per_day": 700,
+    "daily_footfall": 700,
     "conversion_rate_monthly": 0.02,
     "battery_price": 5000,
     "monthly_revenue": 210000,
@@ -261,7 +263,7 @@
       "units": 79
     }
   ],
-  "cross_sell_opportunities": [
+  "cross_sell_opportunities_high": [
     {
       "product": "2W Batteries",
       "areas": [
@@ -306,5 +308,12 @@
       ],
       "method": "Garage packs + subscriptions"
     }
+  ],
+  "cross_sell_opportunities": [
+    "2W Batteries",
+    "Lubricants & Coolants",
+    "Car Accessories",
+    "Inverter Batteries",
+    "Electrical Spares & Tools"
   ]
 }

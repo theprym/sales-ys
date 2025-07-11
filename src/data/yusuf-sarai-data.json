@@ -34,16 +34,6 @@
         "opportunity": "Affluent govt housing, near JLN Stadium"
       },
       {
-        "area": "South Extension I & II",
-        "status": "Lightly Covered",
-        "opportunity": "Upscale market, untapped service"
-      },
-      {
-        "area": "Green Park Extension",
-        "status": "Partially Covered",
-        "opportunity": "Micro-roads not fully utilized"
-      },
-      {
         "area": "Yusuf Sarai",
         "status": "Not Covered",
         "opportunity": "High walk-in traffic, auto-repair market"
@@ -72,6 +62,18 @@
         "area": "Panchsheel / Shahpur Jat",
         "status": "Not Covered",
         "opportunity": "Boutique garages, affluent homes"
+      }
+    ],
+    "partial":[
+      {
+        "area": "South Extension I & II",
+        "status": "Lightly Covered",
+        "opportunity": "Upscale market, untapped service"
+      },
+      {
+        "area": "Green Park Extension",
+        "status": "Partially Covered",
+        "opportunity": "Micro-roads not fully utilized"
       }
     ]
   },
